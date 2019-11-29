@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/splash_logo"
+        app:layout_constraintBottom_toTopOf="@+id/login_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_user"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="@id/login_user"
+        app:layout_constraintTop_toTopOf="@id/login_user"
+        app:layout_constraintBottom_toBottomOf="@id/login_user"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/account_sina"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="@id/login_sina"
+        app:layout_constraintTop_toTopOf="@id/login_sina"
+        app:layout_constraintBottom_toBottomOf="@id/login_sina"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/account_tencent"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="@id/login_tencent"
+        app:layout_constraintTop_toTopOf="@id/login_tencent"
+        app:layout_constraintBottom_toBottomOf="@id/login_tencent"/>
+
+    <TextView
+        android:id="@+id/login_user"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/text_shape"
+        android:text="   用户名登录"
+        android:textSize="15dp"
+        android:typeface="monospace"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/login_sina"
+        app:layout_constraintEnd_toEndOf="@+id/login_bg"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_sina"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_shape"
+        android:gravity="center"
+        android:text="   新浪微博"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/login_bg" />
+
+    <TextView
+        android:id="@+id/login_tencent"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/text_shape"
+        android:text="   腾讯微博"
+        android:gravity="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_sina" />
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_tencent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
